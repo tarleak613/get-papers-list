@@ -157,4 +157,3 @@ The tool is ready to be extended or published as a standalone utility.
 
 [GitHub Link Here](https://github.com/tarleak613/get-papers-list)
 
-```
