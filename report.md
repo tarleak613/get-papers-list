@@ -1,14 +1,5 @@
-Great — since Aganitha also wants a **report** summarizing your:
 
-* ✅ Approach
-* ✅ Methodology
-* ✅ Results
-
-I'll now generate a clean and professional `report.md` file that you can submit or convert to PDF if required.
-
----
-
-## 📄 `report.md` (You can rename this to `report.pdf` after converting)
+## 📄 `report.md` 
 
 ````markdown
 # 📊 Aganitha Backend Take-home Assignment Report
@@ -164,7 +155,7 @@ The tool is ready to be extended or published as a standalone utility.
 
 ## 🔗 GitHub Repository
 
-[👉 GitHub Link Here](https://github.com/tarleak613/get-papers-list)
+[GitHub Link Here](https://github.com/tarleak613/get-papers-list)
 
 ```
 
@@ -175,11 +166,3 @@ The tool is ready to be extended or published as a standalone utility.
 1. Save this as `report.md` or paste into a Google Doc / Word file and export as `report.pdf`
 2. Add it to your GitHub repo or email zip submission
 3. Make sure the GitHub link is added in the README and/or submission form
-
-Would you like me to:
-
-- Convert this to a downloadable `.pdf` version for you?
-- Help you write a professional email to submit this to Aganitha?
-
-Let me know — you're almost done and this is looking **very professional** 💼
-```
