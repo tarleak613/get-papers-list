@@ -158,11 +158,3 @@ The tool is ready to be extended or published as a standalone utility.
 [GitHub Link Here](https://github.com/tarleak613/get-papers-list)
 
 ```
-
----
-
-## ✅ What You Should Do Next
-
-1. Save this as `report.md` or paste into a Google Doc / Word file and export as `report.pdf`
-2. Add it to your GitHub repo or email zip submission
-3. Make sure the GitHub link is added in the README and/or submission form
