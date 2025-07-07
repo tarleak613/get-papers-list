@@ -1,3 +1,35 @@
+## 📝 Problem Statement
+Build a Python command-line tool that fetches research papers from the PubMed API based on a user-provided query. The tool must identify papers with at least one author affiliated with a non-academic institution (specifically pharmaceutical or biotech companies), and return the results in CSV format.
+
+The program must:
+Use PubMed’s E-utilities API (esearch, efetch)
+
+Accept a flexible search query (e.g. "cancer therapy")
+
+Output a CSV with the following columns:
+
+PubmedID
+
+Title
+
+Publication Date
+
+Non-academic Author(s)
+
+Company Affiliation(s)
+
+Corresponding Author Email
+
+Be executed via a CLI command: get-papers-list
+
+Support command-line options:
+
+-h, --help
+
+-d, --debug
+
+-f, --file (to save output as CSV)
+
 # 📘 get-papers-list
 
 A Python command-line tool to fetch PubMed research papers based on a user query and extract papers that include **at least one author affiliated with a non-academic (pharmaceutical or biotech) organization**.
