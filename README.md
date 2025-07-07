@@ -14,6 +14,8 @@ Support command-line options:
  -h, --help
  -d, --debug
  -f, --file (to save output as CSV)
+ 
+---
 
 # 📘 get-papers-list
 
