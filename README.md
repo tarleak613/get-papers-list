@@ -27,22 +27,22 @@ get_papers/
 ├── __init__.py     # Marks as Python package
 README.md           # This file
 pyproject.toml      # Poetry config
-
+```
 
 ## 💻 Installation & Usage
 1. Clone the Repo and Install Poetry (if not already)
-git clone https://github.com/your-username/get-papers-list.git
-cd get-papers-list
-poetry install
+<pre> git clone https://github.com/your-username/get-papers-list.git </pre>
+<pre> cd get-papers-list </pre>
+<pre> poetry install </pre>
 
 2. Run the CLI
-poetry run get-papers-list "your search query"
+<pre> poetry run get-papers-list "your search query" </pre>
 
 To save results to a CSV file:
-poetry run get-papers-list "cancer therapy" -f results.csv
+<pre> poetry run get-papers-list "cancer therapy" -f results.csv </pre>
 
 To see debug information:
-poetry run get-papers-list "cancer therapy" --debug
+<pre> poetry run get-papers-list "cancer therapy" --debug </pre>
 
 ## 🔍 Output Format (CSV Columns)
 PubmedID – Paper ID
@@ -85,12 +85,6 @@ Strict typing used via dataclasses and typing.
 
 ## 🤝 Credits
 Made as part of the Aganitha Backend Take-home Assignment.
-
-yaml
-Copy
-Edit
-
----
 
 ## ✅ Final Step
 
