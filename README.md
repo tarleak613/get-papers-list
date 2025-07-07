@@ -31,9 +31,9 @@ pyproject.toml      # Poetry config
 
 ## 💻 Installation & Usage
 1. Clone the Repo and Install Poetry (if not already)
-<pre> git clone https://github.com/your-username/get-papers-list.git </pre>
-<pre> cd get-papers-list </pre>
-<pre> poetry install </pre>
+<pre> git clone https://github.com/your-username/get-papers-list.git 
+ cd get-papers-list 
+ poetry install </pre>
 
 2. Run the CLI
 <pre> poetry run get-papers-list "your search query" </pre>
