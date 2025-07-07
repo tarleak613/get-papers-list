@@ -164,7 +164,7 @@ The tool is ready to be extended or published as a standalone utility.
 
 ## 🔗 GitHub Repository
 
-[👉 GitHub Link Here](https://github.com/your-username/get-papers-list)
+[👉 GitHub Link Here](https://github.com/tarleak613/get-papers-list)
 
 ```
 
