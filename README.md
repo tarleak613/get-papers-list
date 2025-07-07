@@ -29,33 +29,22 @@ README.md           # This file
 pyproject.toml      # Poetry config
 
 
-💻 Installation & Usage
+## 💻 Installation & Usage
 1. Clone the Repo and Install Poetry (if not already)
-bash
-Copy
-Edit
 git clone https://github.com/your-username/get-papers-list.git
 cd get-papers-list
 poetry install
+
 2. Run the CLI
-bash
-Copy
-Edit
 poetry run get-papers-list "your search query"
+
 To save results to a CSV file:
-
-bash
-Copy
-Edit
 poetry run get-papers-list "cancer therapy" -f results.csv
-To see debug information:
 
-bash
-Copy
-Edit
+To see debug information:
 poetry run get-papers-list "cancer therapy" --debug
 
-🔍 Output Format (CSV Columns)
+## 🔍 Output Format (CSV Columns)
 PubmedID – Paper ID
 
 Title – Title of the research paper
@@ -68,7 +57,7 @@ Company Affiliation(s) – Company names from author affiliation field
 
 Corresponding Author Email – Email address extracted from affiliation text
 
-🧠 Heuristics Used
+## 🧠 Heuristics Used
 Academic affiliation detection:
 
 Looks for words like "University", "Institute", "College", "Hospital", etc.
@@ -79,7 +68,7 @@ Looks for words like "Pharma", "Biotech", "Inc", "Ltd", "Company"
 
 Emails extracted using regular expressions from affiliation strings
 
-🔧 Tools & Libraries Used
+## 🔧 Tools & Libraries Used
 Tool	Purpose
 Poetry	Dependency & packaging manager
 Typer	CLI interface
@@ -87,14 +76,14 @@ Requests	PubMed API calls
 csv module	Output formatting
 ElementTree	XML parsing from PubMed
 
-📌 Notes
+## 📌 Notes
 Only papers with at least one company-affiliated author are included.
 
 Some results may have missing email addresses or affiliations if PubMed data is incomplete.
 
 Strict typing used via dataclasses and typing.
 
-🤝 Credits
+## 🤝 Credits
 Made as part of the Aganitha Backend Take-home Assignment.
 
 yaml
