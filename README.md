@@ -1,3 +1,22 @@
+# 📝 Problem Statement
+Build a Python command-line tool that fetches research papers from the PubMed API based on a user-provided query. The tool must identify papers with at least one author affiliated with a non-academic institution (specifically pharmaceutical or biotech companies), and return the results in CSV format.
+
+The program must:
+ - Use PubMed’s E-utilities API (esearch, efetch)
+ - Accept a flexible search query (e.g. "cancer therapy")
+ - Output a CSV with the following columns:
+
+PubmedID, Title, Publication Date, Non-academic Author(s), Company Affiliation(s), Corresponding Author Email
+
+Be executed via a CLI command: get-papers-list
+
+Support command-line options:
+ -h, --help
+ -d, --debug
+ -f, --file (to save output as CSV)
+ 
+---
+
 # 📘 get-papers-list
 
 A Python command-line tool to fetch PubMed research papers based on a user query and extract papers that include **at least one author affiliated with a non-academic (pharmaceutical or biotech) organization**.
@@ -27,35 +46,24 @@ get_papers/
 ├── __init__.py     # Marks as Python package
 README.md           # This file
 pyproject.toml      # Poetry config
+```
 
-
-💻 Installation & Usage
+## 💻 Installation & Usage
 1. Clone the Repo and Install Poetry (if not already)
-bash
-Copy
-Edit
-git clone https://github.com/your-username/get-papers-list.git
-cd get-papers-list
-poetry install
+<pre> git clone https://github.com/your-username/get-papers-list.git 
+ cd get-papers-list 
+ poetry install </pre>
+
 2. Run the CLI
-bash
-Copy
-Edit
-poetry run get-papers-list "your search query"
+<pre> poetry run get-papers-list "your search query" </pre>
+
 To save results to a CSV file:
+<pre> poetry run get-papers-list "cancer therapy" -f results.csv </pre>
 
-bash
-Copy
-Edit
-poetry run get-papers-list "cancer therapy" -f results.csv
 To see debug information:
+<pre> poetry run get-papers-list "cancer therapy" --debug </pre>
 
-bash
-Copy
-Edit
-poetry run get-papers-list "cancer therapy" --debug
-
-🔍 Output Format (CSV Columns)
+## 🔍 Output Format (CSV Columns)
 PubmedID – Paper ID
 
 Title – Title of the research paper
@@ -68,7 +76,7 @@ Company Affiliation(s) – Company names from author affiliation field
 
 Corresponding Author Email – Email address extracted from affiliation text
 
-🧠 Heuristics Used
+## 🧠 Heuristics Used
 Academic affiliation detection:
 
 Looks for words like "University", "Institute", "College", "Hospital", etc.
@@ -79,7 +87,7 @@ Looks for words like "Pharma", "Biotech", "Inc", "Ltd", "Company"
 
 Emails extracted using regular expressions from affiliation strings
 
-🔧 Tools & Libraries Used
+## 🔧 Tools & Libraries Used
 Tool	Purpose
 Poetry	Dependency & packaging manager
 Typer	CLI interface
@@ -87,21 +95,15 @@ Requests	PubMed API calls
 csv module	Output formatting
 ElementTree	XML parsing from PubMed
 
-📌 Notes
+## 📌 Notes
 Only papers with at least one company-affiliated author are included.
 
 Some results may have missing email addresses or affiliations if PubMed data is incomplete.
 
 Strict typing used via dataclasses and typing.
 
-🤝 Credits
+## 🤝 Credits
 Made as part of the Aganitha Backend Take-home Assignment.
-
-yaml
-Copy
-Edit
-
----
 
 ## ✅ Final Step
 
